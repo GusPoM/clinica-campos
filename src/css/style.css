@@ -1,0 +1,210 @@
+@import "tailwindcss";
+
+@theme{
+  /* Cores neutras */
+  --color-light: #e5ebe6;
+  --color-dark: #2E403C;
+  --color-faint-l: #c0d1cf;
+  --color-faint-m: #a6b4b5;
+  --color-faint-d: #959ea0;
+
+  /* Cores verdes */
+  --color-green-l: #B4EEB4;
+  --color-green-m: #77d39f;
+  --color-green-d: #425d47;
+
+  --color-green-el: #3f754b;
+  --color-green-ed: #2d663d;
+}
+
+@font-face {
+  font-family: 'Nunito-sans';
+  src: url('fonts/Nunito_Sans/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf') format('ttf'),
+       url('fonts/Nunito_Sans/NunitoSans-Italic-VariableFont_YTLC,opsz,wdth,wght.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+html, body{
+    background-color: var(--color-lightBg); /* Cor no body para que seja vísivel em caso de overflow */
+    font-family: Nunito-sans, sans-serif, Arial;
+    margin: 0px;
+    padding: 0px;
+    overflow: 0px;
+}
+main{
+  max-width: 100vw;
+}
+section{
+  width: 100%;
+  padding: 1.5rem;
+}
+footer a{
+  color: var(--color-green-l);
+  text-decoration: underline;
+}
+footer a:hover{
+  color: var(--color-green-m);
+}
+
+
+#name{
+  color: #fff;
+}
+
+
+
+
+a { text-decoration: none;}
+
+:root{
+    --light-border: 1px solid #D2D2D2;
+    --color-lightBg: #e5ebe6;
+    --color-darkBg: #2E403C;
+    --color-lightG: #B4EEB4;
+    --color-darkG: #425d47;
+    --color-medG: #77d39f;
+    --color-elementG: #3f754b;
+    --color-elementDarkG: #2d663d;
+}
+
+/* PC - Tablet e Celular */
+@media screen and (min-width: 992px) {
+  .dborder{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 0px;
+  }
+  .dborder-reverse{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  #Wapp-div{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 100px;
+    height: 100px;
+  }
+  .div-texto-lascado-que-odio h2{ margin-bottom: 10px;}
+}
+@media screen and (max-width: 992px) {
+  .btn-group {
+    display: none;
+  }
+
+  .dborder{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .dborder-reverse{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 0px;
+  }
+  #Wapp-div{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 75px;
+    height: 75px;
+  }
+}
+
+
+@media screen and (min-width: 1400px){
+  .div-texto-lascado-que-odio p { font-size: 26px; }
+}
+@media screen and (min-width: 1310px) and (max-width: 1400px){
+  .div-texto-lascado-que-odio p { font-size: 22px; }
+}
+@media screen and (max-width:1310px) and (min-width: 576px){
+  .div-texto-lascado-que-odio p { font-size: 20px; }
+}
+
+
+/* PC - Tablet - Celular */
+@media screen and (min-width: 1200px){
+  html{
+    font-size: 18px;
+  }
+    .dsize{
+    width: 60%;
+  }
+}
+@media screen and (max-width:1200px) and (min-width: 576px){
+  html{
+    font-size: 16x;
+  }
+  .dsize{
+    width: 65%;
+  }
+  .div-texto-lascado-que-odio p { font-size: 18px;}
+}
+@media screen and (max-width: 576px){
+  html{
+    font-size: 14px;
+  }
+  .dsize{
+    width: 100%;
+  }
+}
+
+
+
+
+
+/* Cores padrão dos principais elementos */
+header{
+    background-color: var(--color-medG);
+    color: var(--color-darkG);
+}
+main{
+    background-color: var(--color-lightBg);
+    color: var(--color-darkG);
+}
+footer{
+    background-color: var(--color-darkBg);
+    color: var(--color-lightG);
+}
+
+
+/* Cores para elementos adicionais */
+.box-green{
+    background-color: var(--color-medG);
+    color: var(--color-darkG);
+}
+.box-light-green{
+    background-color: var(--color-lightG);
+    color: var(--color-darkBg);
+}
+.box-dark-green{
+    background-color: var(--color-darkBg);
+    color: var(--color-lightG);
+}
+.box-white{
+    background-color: #fff;
+    color: var(--color-darkG);
+    border: var(--light-border);
+}
+
+
+/* Estilização padrão */
+.p-3{ padding: 1rem; }
+.btn-success { background-color: var(--color-elementG);}S
+.btn-success:hover { background-color: var(--color-elementDarkG);}
+a.btn{ align-content: center; padding: 0.5em 0.75em; }
+.light-border { border: var(--light-border); }
+.bg-success {background-color: var(--color-elementG); }
+
+#logo{ text-decoration: none; color: var(--color-darkG) }
+/*header .btn{ background: rgba(0,0,0,0); border-width: 0px; color:#425d47;} /*Header "invísivel" */

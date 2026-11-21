@@ -1,0 +1,222 @@
+/* CALENDÁRIO */
+.calendar-container{
+    border-radius:20px;
+    padding:15px;
+    width:100%;
+    max-width:700px;
+    margin:0 auto;
+}
+
+.calendar{
+    transform-origin:top center;
+}
+
+.year-header{
+    position:relative;
+    min-height:40px;
+    margin-bottom:10px;
+}
+
+.year{
+    font-size:22px;
+    font-weight:bold;
+}
+
+.left-button,
+.right-button{
+    position:absolute;
+    top:2px;
+    padding:2px 6px;
+    font-size:12px;
+}
+
+.left-button{
+    left:0;
+}
+
+.right-button{
+    right:0;
+}
+
+.months-table{
+    margin-bottom:10px;
+}
+
+.month{
+    cursor:pointer;
+    font-weight:600;
+    color:#6c757d;
+    padding:6px;
+    font-size:14px;
+    transition:0.2s;
+}
+
+.month:hover{
+    background-color: #eee;
+    color:var(--color-medG);
+}
+
+.month.active-month{
+    color:var(--color-medG) !important;
+    font-weight:bold;
+}
+
+.days-table,
+.dates-table{
+    width:100%;
+    table-layout:fixed;
+    border-collapse:separate;
+    border-spacing:4px;
+}
+
+.day{
+    font-weight:bold;
+    color:#6c757d;
+    text-transform:uppercase;
+    height:30px;
+    font-size:12px;
+}
+
+.table-date{
+    height:55px;
+    line-height:55px;
+    border-radius:10px;
+    font-size:20px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.2s;
+    border:none;
+    text-align:center;
+    vertical-align:middle;
+}
+
+.table-date:hover{
+    transform:scale(1.03);
+    background-color:var(--color-medG);
+    color: #fff;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.table-date.nil{
+    background:transparent;
+    box-shadow:none;
+    cursor:default;
+}
+
+.active-date{
+    background:var(--color-medG) !important;
+    color:white !important;
+}
+
+.event-date{
+    background:#ffc107 !important;
+    color:black !important;
+}
+
+.full-date{
+    background:#dc3545 !important;
+    color:white !important;
+}
+
+/* TIMELINE / EVENTOS */
+.timeline-hour{
+    border-left:5px solid var(--color-medG);
+    border-radius:12px;
+}
+
+.event-card{
+    border:none;
+    border-radius:18px;
+}
+
+.event-card h5{
+    font-size:20px;
+}
+
+.event-card .text-muted{
+    font-size:14px;
+}
+
+.event-card button{
+    min-width:140px;
+}
+
+/* SALAS */
+.room-selector{
+    margin-bottom:20px;
+}
+
+.room-option{
+    min-width:220px;
+}
+
+.room-btn{
+    min-width:220px;
+    border-radius:14px;
+    font-weight:600;
+    padding:12px 20px;
+    transition:0.2s;
+}
+
+.room-btn:hover{
+    transform:translateY(-2px);
+}
+
+.active-room{
+    background:var(--color-medG) !important;
+    color:white !important;
+}
+
+.doctor-name{
+    font-size:14px;
+    font-weight:600;
+    color:#6c757d;
+}
+
+.doctor-title{
+    font-size:18px;
+    font-weight:600;
+    color:#495057;
+    text-align:center;
+    margin-top:18px;
+    margin-bottom:0;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width:768px){
+
+    .calendar-container{
+        max-width:100%;
+        padding:12px;
+    }
+
+    .year{
+        font-size:18px;
+    }
+
+    .month{
+        font-size:12px;
+        padding:4px;
+    }
+
+    .day{
+        font-size:11px;
+        height:24px;
+    }
+
+    .table-date{
+        height:42px;
+        line-height:42px;
+        font-size:13px;
+        border-radius:8px;
+    }
+
+    .room-option,
+    .room-btn{
+        min-width:160px;
+    }
+
+    .doctor-name{
+        font-size:13px;
+    }
+}
