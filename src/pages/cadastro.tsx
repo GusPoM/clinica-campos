@@ -8,7 +8,7 @@ export default function Cadastro(){
         <>
             <Header/>
             <main>
-                <section className="p-3  flex justify-content-center">
+                <section className="flex justify-content-center">
                     <div className="row w-75 bg-light rounded-5 light-border overflow-hidden">
 
                         {/* Conteúdo Principal */}
@@ -26,37 +26,39 @@ export default function Cadastro(){
                             </div>
 
                             {/* Formulário */}
+                            {
+                                /*
+                                 * Itens a se ter: ID!, email', senha!, perms, nome', dataNasc, endereço', telefone*, cpf', foto*
+                                 */
+                            }
                             <form>
 
                                 <div className="row">
 
                                     {/* Nome */}
-                                    <Input nome='Nome Completo' largura={6} placeholder='Digite seu nome completo'/>
+                                    <Input label='Nome Completo' largura={6} placeholder='Digite seu nome completo' obrigatory/>
 
                                     {/* CPF */}
-                                    <Input nome='CPF' largura={6} placeholder='000.000.000-00' minLenght={11} maxLenght={11} />
-                                    
+                                    <Input label='CPF' largura={3} placeholder='000.000.000-00' minLenght={11} maxLenght={11} obrigatory/>
+
+                                    {/* Endereço */}
+                                    <Input label='Data de Nascimento' largura={3} placeholder='Digite sua senha' date obrigatory/>
+
+
+
                                     {/* E-mail */}
-                                    <Input nome='E-mail' largura={6} placeholder='nome@email.com'/>
+                                    <Input label='E-mail' largura={6} placeholder='nome@email.com' email obrigatory/>
 
                                     {/* Telefone */}
-                                    <Input nome='Telefone' largura={6} placeholder='(11) 99999-9999' minLenght={11} maxLenght={11}/>
-                                    
-                                    {/* Senha */}
-                                    <Input nome='Senha' largura={6} placeholder='Digite sua senha'/>
+                                    <Input label='Telefone' largura={6} placeholder='(11) 99999-9999' minLenght={11} maxLenght={11} tel/>
 
-                                    {/* Confirmar Senha */}
-                                    <Input nome='Confirmar Senha' largura={6} placeholder='Confirme sua senha'/>
+
+
+                                    {/* Endereço */}
+                                    <Input label='Endereço' largura={6} placeholder='Confirme sua senha' obrigatory/>
 
                                     {/* Upload Foto */}
-                                    <div className="col-12 mb-4">
-                                        <label className="form-label fw-semibold">
-                                            Foto de Perfil
-                                        </label>
-
-                                        <input type="file"
-                                            className="form-control rounded-4 py-2"/>
-                                    </div>
+                                    <Input label='Foto de Perfil' largura={6} placeholder='fotinha UwU' file />
 
                                 </div>
 
