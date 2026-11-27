@@ -5,29 +5,29 @@ export default function Footer(){
                 <div className="md:w-1/3 w-full">
                     <p>Links úteis</p>
                     <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="associados">Associados</a></li>
-                        <li><a href="sobre">Sobre Nós</a></li>
-                        <li><a href="perfil">Minha Conta</a></li>
-                        <li><a href="login">Login</a></li>
-                        <li><a href="agenda">Agenda</a></li>
-                        <li><a href="cadastro">Cadastro</a></li>
+                        <li><a className="link" href="/">Home</a></li>
+                        <li><a className="link" href="associados">Associados</a></li>
+                        <li><a className="link" href="sobre">Sobre Nós</a></li>
+                        <li><a className="link" href="perfil">Minha Conta</a></li>
+                        <li><a className="link" href="login">Login</a></li>
+                        <li><a className="link" href="agenda">Agenda</a></li>
+                        <li><a className="link" href="cadastro">Cadastro</a></li>
                     </ul>
                 </div>
                 <div className="md:w-1/3 w-full">
                     <p>Canais de comunicação</p>
                     <ul>
-                        <li><a href="https://mail.google.com/mail/">E-mail LiviaCC@algomail.com</a></li>
-                        <li><a href="https://web.whatsapp.com/">Whatsapp 15 99999 9999</a></li>
-                        <li><a href="https://br.linkedin.com/">linkedin Clinica.Campos</a></li>
+                        <li><a className="link" href="https://mail.google.com/mail/">E-mail LiviaCC@algomail.com</a></li>
+                        <li><a className="link" href="https://web.whatsapp.com/">Whatsapp 15 99999 9999</a></li>
+                        <li><a className="link" href="https://br.linkedin.com/">linkedin Clinica.Campos</a></li>
                     </ul>
                 </div>
                 <div className="md:w-1/3 w-full">
                     <p>Sobre o Site</p>
                     <ul>
-                        <li><a href="#">Manejamento de Cookies</a></li>
-                        <li><a href="#">Política de Privacidade</a></li>
-                        <li><a href="#">Termos de Uso</a></li>
+                        <li><a className="link" href="#">Manejamento de Cookies</a></li>
+                        <li><a className="link" href="#">Política de Privacidade</a></li>
+                        <li><a className="link" href="#">Termos de Uso</a></li>
                     </ul>
                 </div>
             </div>
@@ -37,7 +37,7 @@ export default function Footer(){
         
             {/* Icone do Whatsapp */}
             <div id="Wapp-div">
-                <a href="#"><img src="src/assets/img/Wapp_logo.svg" width="100%" className="rounded-full shadow-md shadow-green-ed" /></a>
+                <a className="link" href="#"><img src="src/assets/img/Wapp_logo.svg" width="100%" className="rounded-full shadow-md shadow-green-ed" /></a>
             </div>
             
         </footer>
