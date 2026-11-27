@@ -10,7 +10,7 @@ export default function Sobre(){
         
             {/* CONTEÚDO DA PÁGINA */}
             <main>
-                <section className="w-full p-3 flex justify-center">
+                <section className="flex justify-center">
                     <div className="flex flex-col lg:flex-row box-white rounded-5 dsize">
                         <div className="lg:w-1/2 w-full" style={{padding:0}}>
                             <img src="src/assets/img/placeholder-livia.jpg" className="h-auto max-w-full dborder w-full" alt="" />
@@ -24,7 +24,7 @@ export default function Sobre(){
 
                 <TripleShow />
 
-                <section className="p-3 text-center flex flex-col justify-center items-center">
+                <section className="text-center flex flex-col justify-center items-center">
                     <h3>Onde Estamos</h3>
                     <figure className="mb-3 inline-block">
                         <img src="src/assets/img/CC 1-1.png" className="h-auto max-w-full rounded-2xl w-75 mx-auto mb-0.5" alt="" />

@@ -19,7 +19,7 @@ export default function Associados(){
             {/* CONTEÚDO DA PÁGINA */}
             <main>
             {/* Cards */}
-                <section className="w-full p-3 flex flex-wrap justify-center items-center">
+                <section className="flex flex-wrap justify-center items-center">
                         
                     {/* CARD 1 */}
                     <Card image="placeholder-livia.jpg" titulo="Dra. Clara"
