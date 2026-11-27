@@ -33,7 +33,7 @@ html, body{
     font-family: Nunito-sans, sans-serif, Arial;
     margin: 0px;
     padding: 0px;
-    overflow: 0px;
+    overflow-x: 0px;
 }
 main{
   max-width: 100vw;
@@ -42,12 +42,26 @@ section{
   width: 100%;
   padding: 1.5rem;
 }
-footer a{
+.link{
   color: var(--color-green-l);
   text-decoration: underline;
 }
-footer a:hover{
+.link:hover{
   color: var(--color-green-m);
+}
+.medium-link{
+  color: var(--color-green-m);
+  text-decoration: underline;
+}
+.medium-link:hover{
+  color: var(--color-green-el);
+}
+.dark-link{
+  color: var(--color-green-el);
+  text-decoration: underline;
+}
+.dark-link:hover{
+  color: var(--color-green-d);
 }
 
 
